@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.freeiconspng.com/thumbs/game-icon-png/game-center-icon-png-11.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Power Kombat</title>
+</head>
+<body>
+    <div id="corpo">
+        <div id="topbox">
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="../html/personagens.html">Personagens</a></li>
+                        <li><a href="../html/historia.html">História</a></li>
+                        <li><a href="../html/comandos.html">Comandos</a></li>
+                        <li><a href="../html/squad.html">Squad</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="https://www.greenfoot.org/scenarios/32446">Download</a></li>
+                    </ul>
+                </nav> 
+            </div>
+            
+            <div class="menu-bg" id="menu-bg"></div>
+            <div class="box">
+                <h1>Power Kombat</h1>
+            </div>
+        </div>
+        <div id="cadastro">
+            <h2>Cadastro de Jogo</h2>
+            <form id="cadastroForm" enctype="multipart/form-data">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="squad">Squad:</label>
+                <input type="text" id="squad" name="squad" required><br>
+                
+                <label for="genero">Genero:</label>
+                <input type="text" id="genero" name="genero" required><br>
+                
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required><br>
+                
+                <label for="integrantes">Integrantes:</label>
+                <input type="text" id="integrantes" name="integrantes" required><br>
+    
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" required><br>
+                
+                <label for="thumbnailpath">Thumbnail:</label>
+                <input type="text" id="thumbnailpath" name="thumbnailpath" required><br>
+             
+                <button type="button" onclick="cadastrarJogo()">✔Cadastrar</button>
+                <button type="button" onclick="excluirJogo()">❌Excluir</button>
+            </form>
+             <div id="divimagem">
+                <h2>Lista de Jogos</h2><br>
+                <button type="button" onclick="ListarJogos()">🔎Pesquisar</button>
+                <main>
+                    <table class="blueTable" id="jogos-tabela">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome do Jogo</th>
+                                <th>Squad</th>
+                                <th>Genero</th>
+                                <th>Descrição</th>
+                                <th>Integrantes</th>
+                                <th>URL</th>
+                                <th>Thumbnail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- A tabela de funcionários será carregada aqui -->
+                        </tbody>
+                    </table>
+                </main>
+            </div>
+        </div> 
+    </div>
+    
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

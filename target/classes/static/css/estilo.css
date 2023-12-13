@@ -1,0 +1,332 @@
+@font-face {
+    font-family: "Retro Gaming";
+    src: url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot");
+    src: url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.svg#Retro Gaming")format("svg");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #234;
+}
+
+#corpo {
+    font-family: 'Retro Gaming';
+    background-color: #234;
+    height: auto;
+    width: 100%;
+    position: relative;
+    color: white;
+    padding-bottom: 10px;
+  }
+  
+  #menu {
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px #222;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #222, #222);
+    opacity: 75%;
+    border-radius: 20%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 600px;
+    transform: translate(-60%,-30%);
+  }
+
+  /*CSS -----------*/
+  
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box h1 {
+    text-shadow: 2px 3px #222 ;
+  }
+
+  #topbox{
+    background-color: royalblue;
+  }
+
+  .text{
+    max-width: 50vw;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .img{
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    border: 2px white solid;
+    border-radius: 20px;
+    margin-top: 80px;
+  }
+
+  .DJogo{
+    background-color: red;
+    margin-top: 25px;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .corpo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 150px;
+  }
+
+  .perfil:hover {
+    background-color: grey;
+    border-bottom: 5px solid #fff;
+    color: #fff;
+    transform: translateY(-7.5px);
+    transition: background-color 0.5s ease, transform 1s ease, border-bottom 0.5s ease 0.2s;
+  }
+
+  .perfil {
+    background-color: #ffff;
+    padding: 0.2em 0.5em;
+    color: #222;
+    height: 15em;
+    width: 10em;
+    border-radius: 5px;
+    margin: 1.5em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .perfil .pfp {
+    width: 50%;
+    border-radius: 100%;
+  }
+
+  .texto {
+    margin: 1em 0em 0em 0em;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .texto h1 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Retro Gaming';
+  }
+
+  .logolink {
+    margin: 0.6em 0em 0em 0em;
+    width: 25%;
+  }
+  .logolink img {
+    border-radius: 100%;
+    background-color: #ffff;
+  }
+  .logolink .github-logo {
+    width: 100%;
+  }
+
+  .perso{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 60vh;
+    align-items: center;
+  }
+
+
+
+
+
+  /*catalogo*/
+
+  #cadastro {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#divimagem {
+    margin-top: 20px;
+    max-width: 800px;
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se necessário */
+}
+
+.blueTable {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-width: 100%; /* Adiciona um limite máximo à largura da tabela */
+}
+
+.blueTable th, .blueTable td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+
+.blueTable th {
+    background-color: #f2f2f2;
+    width: auto; /* Largura automática para o cabeçalho */
+}
+
+.blueTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+#jogos-tabela img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+h2 {
+    text-align: center;
+}
